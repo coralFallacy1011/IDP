@@ -1,0 +1,24 @@
+flask 
+flask-cors 
+pytesseract 
+pillow 
+rapidfuzz 
+opencv-python 
+numpy 
+pandas
+pymongo
+web3 
+# NLP / LLM dependencies
+transformers
+torch
+sentence-transformers
+faiss-cpu
+langchain
+langchain-community
+# llama-cpp-python
+ctransformers
+python-dateutil
+langdetect  # optional: more accurate language detection on mixed-script documents
+jinja2 
+reportlab
+jwt

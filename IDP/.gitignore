@@ -1,0 +1,9 @@
+.DS_Store
+venv/
+__pycache__/
+*.pyc
+backend/preprocessed_cache/
+dataset/
+FUNSD/
+frontend/
+new dataset/

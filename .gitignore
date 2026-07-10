@@ -1,0 +1,85 @@
+# ─── Python virtual environments ───────────────────────────────────────────────
+venv/
+venv_new/
+biometric_venv/
+.venv/
+env/
+test/venv/
+
+# ─── Python cache & compiled files ─────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+
+# ─── Datasets & large data directories ─────────────────────────────────────────
+dataset/
+fir_dataset_icdar2023/
+FUNSD/
+legal_pdfs/
+new dataset/
+
+# ─── Node / JavaScript ─────────────────────────────────────────────────────────
+node_modules/
+frontend/node_modules/
+IDP/blockchain/node_modules/
+
+# ─── Next.js build output ───────────────────────────────────────────────────────
+.next/
+out/
+frontend/.next/
+frontend/out/
+frontend/tsconfig.tsbuildinfo
+
+# ─── Hardhat / blockchain build artifacts ──────────────────────────────────────
+IDP/blockchain/artifacts/
+IDP/blockchain/cache/
+IDP/blockchain/hardhat_node.log
+IDP/blockchain/hardhat_node_new.log
+
+# ─── Backend runtime artifacts ─────────────────────────────────────────────────
+IDP/backend/preprocessed_cache/
+IDP/backend/faiss_index/
+IDP/backend/uploads/
+IDP/backend/files/
+IDP/backend/reports/
+IDP/backend/__pycache__/
+IDP/backend/.hypothesis/
+IDP/backend/.pytest_cache/
+
+# ─── Uploaded / temporary files ────────────────────────────────────────────────
+temp_driver/
+*.zip
+
+# ─── Pre-compiled wheels ────────────────────────────────────────────────────────
+*.whl
+
+# ─── Testing / hypothesis ──────────────────────────────────────────────────────
+.hypothesis/
+.pytest_cache/
+
+# ─── Environment / secrets ─────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+frontend/.env.local
+
+# ─── OS / editor files ─────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
+*.swo
+*~
+
+# ─── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ─── Misc ──────────────────────────────────────────────────────────────────────
+*.egg-info/
+dist/
+build/
+.eggs/

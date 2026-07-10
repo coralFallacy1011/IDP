@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fingerprint Authentication</title>
+
+<style>
+
+body{
+font-family: Arial;
+text-align:center;
+margin-top:100px;
+}
+
+#status{
+font-size:30px;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+<body>
+
+<h1>Biometric Authorization</h1>
+
+<div id="status">
+Waiting...
+</div>
+
+<script>
+
+async function checkUser(){
+
+const response = await fetch(
+"http://localhost:5000/last"
+);
+
+const data = await response.json();
+
+if(data.status==="authorized"){
+document.getElementById("status").innerHTML=
+"✅ "+data.user;
+}
+else{
+document.getElementById("status").innerHTML=
+"❌ Unauthorized";
+}
+
+}
+
+setInterval(checkUser,2000);
+
+</script>
+
+</body>
+</html>
+
